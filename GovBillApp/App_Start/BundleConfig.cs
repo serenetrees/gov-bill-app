@@ -25,15 +25,17 @@ namespace GovBillApp
                       "~/Scripts/angular-ui-router.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                      "~/App/bill/bill.module.js",
-                      "~/App/bill/config.route.js",
-                      "~/App/bill/bill.controller.js",
+                      "~/app/bill/bill.module.js",
+                      "~/app/bill/config.route.js",
+                      "~/app/bill/bill.controller.js",
+                      "~/app/bill/bill.service.js",
 
-                      "~/App/congress-member/congressMember.module.js",
-                      "~/App/congress-member/config.route.js",
-                      "~/App/congress-member/congressMember.controller.js",
+                      "~/app/congress-member/congressMember.module.js",
+                      "~/app/congress-member/config.route.js",
+                      "~/app/congress-member/congressMember.controller.js",
 
-                      "~/App/app.js"));
+                      "~/app/app.js"
+                      ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

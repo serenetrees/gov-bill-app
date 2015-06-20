@@ -22,7 +22,15 @@
                 data: {
                     pageTitle: 'Bills' 
                 }
-            });
+            })
+            //.state('bill.detail', {
+            //     url: '/bill.detail', 
+            //    templateUrl: 'app/bill/bill.detail.html/{id}', 
+            //    data: {
+            //        pageTitle: 'Bill Detail' 
+            //    }
+            //})
+        ;
     }]);
 
 })();

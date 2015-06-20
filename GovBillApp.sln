@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GovBillApp", "GovBillApp\Go
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GovBillApp.Tests", "GovBillApp.Tests\GovBillApp.Tests.csproj", "{B20579F6-8F63-4260-81F9-423717131D89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GovDomain", "GovDomain\GovDomain.csproj", "{5304EAD3-69F5-4C9A-BCB8-910802043DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GovRepository", "GovernmentRepository\GovRepository.csproj", "{9968EE57-AAE8-4543-8C28-76D2AA4A5A2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B20579F6-8F63-4260-81F9-423717131D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20579F6-8F63-4260-81F9-423717131D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20579F6-8F63-4260-81F9-423717131D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5304EAD3-69F5-4C9A-BCB8-910802043DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5304EAD3-69F5-4C9A-BCB8-910802043DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5304EAD3-69F5-4C9A-BCB8-910802043DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5304EAD3-69F5-4C9A-BCB8-910802043DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9968EE57-AAE8-4543-8C28-76D2AA4A5A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9968EE57-AAE8-4543-8C28-76D2AA4A5A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9968EE57-AAE8-4543-8C28-76D2AA4A5A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9968EE57-AAE8-4543-8C28-76D2AA4A5A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

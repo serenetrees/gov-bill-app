@@ -1,7 +1,35 @@
 ﻿<div ng-controller="BillCtrl as billCtrl">
     <h1>List of Bills</h1>
     <hr />
-    <section id="billList">
-        Display bills here.
+
+    <section id="billList" style="margin-bottom: 1em;">
+        <div ng-repeat="bill in billCtrl.bills" ng-cloak>
+            <!-- Have sref be in an ng-repeat. -->
+            Bill Number:  <a ng-click="billCtrl.loadBillDetails(bill)">{{bill.billNumber}}</a>
+        </div>
+    </section>
+    
+    <hr/>
+
+    <section id="billDetails" ng-show="billCtrl.showBillDetails" ng-cloak>
+        <p>Number: {{billCtrl.selectedBill.billNumber}}</p>
+        <p>Title: {{billCtrl.selectedBill.title}}</p>
+
+        <button ng-click="billCtrl.editBill()">Edit Bill</button>
+    </section>
+
+    <section id="billEdit" ng-show="billCtrl.editBillDetails">
+        <form id="billEditForm">
+            <p>
+                <label for="billNumber">Number:</label>
+                <input name="billNumber" type="text" ng-model="billCtrl.selectedBill.billNumber" />
+            </p>
+            <p>
+                <label for="billTitle">Title:</label>
+                <input name="billTitle" type="text" ng-model="billCtrl.selectedBill.title" />
+            </p>
+
+            <button ng-click="billCtrl.closeEditBill()">Close</button>
+        </form>
     </section>
 </div>
