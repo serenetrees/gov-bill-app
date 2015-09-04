@@ -2,10 +2,13 @@
     'use strict';
 
     // Get a reference to the module.
-    var billApp = angular.module('congress.bill');
+    var congressMemberApp = angular.module('congress.congressMember');
 
-    billApp.controller('CongressMemberCtrl', ['$stateProvider', function ($stateProvider)
-    {
-    }]);
+    congressMemberApp.controller('CongressMemberCtrl', [CongressMemberCtrl]);
 
+    function CongressMemberCtrl () {
+        this.changeState = function() {
+            $state.go("congressMember.list");
+        }
+    };
 })();

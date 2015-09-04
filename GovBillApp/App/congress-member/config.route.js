@@ -2,24 +2,23 @@
     'use strict';
 
     // Get a reference to the module.
-    var billApp = angular.module('congress.bill');
+    var congressMemberApp = angular.module('congress.congressMember');
 
-    billApp.config(['$stateProvider', function ($stateProvider) {
+    congressMemberApp.config(['$stateProvider', function ($stateProvider) {
         $stateProvider
             .state('congressMember', {
-                 url: '/congressmember', 
+                url: '/congressmember', 
                 templateUrl: 'app/congress-member/congressMember.home.html', 
                 data: {
                      pageTitle: 'Congress Members'
                 }
             })
-            .state('congressMember.list', { 
-                url: '/congressmember.list', 
+            .state('congressMember.list', {
+                url: '/list', 
                 templateUrl: 'app/congress-member/congressMember.list.html',
                 data: {
                      pageTitle: 'Congress Members'
-                }
-
+               } 
             });
     }]);
 
