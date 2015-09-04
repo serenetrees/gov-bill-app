@@ -6,7 +6,6 @@
 
     billApp.controller('BillCtrl', ['billService', BillCtrl]);
 
-    // ReSharper disable once InconsistentNaming
     function BillCtrl (billService) {
         var self = this;
         self.bills = [];
