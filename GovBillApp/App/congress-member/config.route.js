@@ -8,14 +8,14 @@
         $stateProvider
             .state('congressMember', {
                 url: '/congressmember', 
-                templateUrl: 'app/congress-member/congressMember.home.html', 
+                templateUrl: '/app/congress-member/congressMember.home.html', 
                 data: {
                      pageTitle: 'Congress Members'
                 }
             })
             .state('congressMember.list', {
                 url: '/list', 
-                templateUrl: 'app/congress-member/congressMember.list.html',
+                templateUrl: '/app/congress-member/congressMember.list.html',
                 data: {
                      pageTitle: 'Congress Members'
                } 
